@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 05</title>
+</head>
+<body>
+    
+    número <input type="number" id="numero">
+    <button onclick="verificarNumero()">Verificar</button>
+    <p id="resultado"></p>
+    <script>
+        function verificarNumero() {
+            var numero = parseFloat(document.getElementByld("numero").value);
+            var resultadoElement = document.getElementByld("resultado").value
+
+            if (numero > 0){
+                alert ("O número é positivo.");
+            }else if (numero < 0){
+                alert ("O número é negativo.");
+            }else {
+                alert ("O número é nulo.");
+            }
+        }
+    </script>
+
+</body>
+</html>

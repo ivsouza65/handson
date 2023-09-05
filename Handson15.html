@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson 15 Israel</title>
+</head>
+<body>
+    <!--
+        Criar um algoritmo para mostrar a média trimestal de vendas de um determinado vendedor
+    -->
+
+    <h1>Média Trimestral de Vendas</h1>
+    
+    Vendas do Mês 1: <input type="number" id="mes1"><br>
+
+    Vendas do Mês 2: <input type="number" id="mes2"><br>
+
+    Vendas do Mês 3: <input type="number" id="mes3"><br>
+
+    <!-- Botão para calcular a média -->
+
+    <button onclick="calcularMedia()">Calcular Média</button>
+
+    <!-- Resultado da média trimestral -->
+
+    <p id="resultado"></p>
+
+    <script>
+
+        // Função para calcular a média trimestral
+
+        function calcularMedia() {
+            
+            // Obter os valores de vendas de cada mês
+
+            var vendasMes1 = parseFloat(document.getElementById("mes1").value);
+
+            var vendasMes2 = parseFloat(document.getElementById("mes2").value);
+
+            var vendasMes3 = parseFloat(document.getElementById("mes3").value);
+
+            // Calcular a média trimestral
+
+            var mediaTrimestral = (vendasMes1 + vendasMes2 + vendasMes3) / 3;
+
+              // Exibir o resultado da média com duas casas decimais
+              
+            document.getElementById("resultado").textContent = "Média trimestral: " + mediaTrimestral.toFixed(2);
+        }
+    </script>
+</body>
+</html>
